@@ -1,0 +1,11 @@
+{
+  "consulta": "EXEMPLO (dados fictícios) — Sony WH-1000XM5",
+  "criada_em": "2026-11-14T15:00:00Z",
+  "notas": "Pesquisa de demonstração com valores inventados, só para veres o aspeto da tabela. Podes apagá-la.",
+  "resultados": [
+    { "loja_id": "worten", "titulo": "Sony WH-1000XM5 Preto", "url": "https://www.worten.pt", "preco": 299.99, "disponivel": true, "confianca": "exato", "peso_kg": null, "portes_observados": 6.5, "nota": "" },
+    { "loja_id": "amazon-es", "titulo": "Sony WH-1000XM5 Negro", "url": "https://www.amazon.es", "preco": 279.0, "disponivel": true, "confianca": "exato", "peso_kg": null, "portes_observados": null, "nota": "vendido e enviado pela Amazon" },
+    { "loja_id": "castro-electronica", "titulo": "Sony WH-1000XM5B", "url": "https://www.castroelectronica.pt", "preco": 289.9, "disponivel": false, "confianca": "provavel", "peso_kg": null, "portes_observados": 0, "nota": "" }
+  ],
+  "nao_encontrado": [ { "loja_id": "pcdiga", "motivo": "não vende este artigo" } ]
+}

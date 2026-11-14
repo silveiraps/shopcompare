@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShopCompare Terceira</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="marca">
+      <strong>ShopCompare</strong>
+      <span class="sub">preço + portes até à Terceira</span>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" data-tab="pesquisas" class="ativo">Pesquisas</button>
+      <button role="tab" data-tab="lojas">Lojas</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== PESQUISAS ===================== -->
+    <section id="tab-pesquisas" class="tab">
+      <div class="cartao nova-pesquisa">
+        <label for="q">O que queres comprar?</label>
+        <div class="linha">
+          <input id="q" type="text" placeholder="ex.: Sony WH-1000XM5 preto" autocomplete="off">
+          <button id="btn-copiar" class="primario">Copiar comando</button>
+        </div>
+        <p class="ajuda" id="ajuda-comando">
+          Cola o comando no <b>Claude Code</b> aberto na pasta do projeto. Os resultados aparecem aqui sozinhos.
+        </p>
+      </div>
+
+      <div class="grelha">
+        <aside class="cartao">
+          <h2>Histórico</h2>
+          <ul id="lista-pesquisas" class="lista"></ul>
+        </aside>
+        <div class="cartao" id="resultado">
+          <p class="vazio">Escolhe uma pesquisa no histórico, ou faz uma nova.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LOJAS ===================== -->
+    <section id="tab-lojas" class="tab" hidden>
+      <div class="cartao">
+        <div class="cabecalho">
+          <h2>Lojas guardadas</h2>
+          <button id="btn-nova-loja" class="primario">+ Nova loja</button>
+        </div>
+        <p class="ajuda">
+          Também podes pedir ao Claude Code: <code>/adicionar-loja https://loja.pt</code>. Ele lê as condições de envio e propõe os valores.
+        </p>
+        <div class="tabela-wrap">
+          <table class="tabela" id="tabela-lojas">
+            <thead>
+              <tr>
+                <th>Loja</th><th>Envia p/ Terceira</th><th>Portes</th><th>Grátis a partir de</th>
+                <th>Prazo</th><th>Avaliação</th><th>Verificado</th><th></th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FORMULÁRIO LOJA ===================== -->
+  <dialog id="dlg-loja">
+    <form id="form-loja" method="dialog">
+      <h2 id="dlg-titulo">Loja</h2>
+      <div class="campos">
+        <label>Nome<input name="nome" required></label>
+        <label>Site<input name="url" type="url" placeholder="https://..."></label>
+        <label>País<input name="pais" placeholder="PT, ES, DE..." maxlength="3"></label>
+        <label>Categorias <small>(separadas por vírgulas)</small><input name="categorias" placeholder="informática, eletrónica"></label>
+        <label class="largo">URL de pesquisa <small>(usa {q} no lugar do produto)</small>
+          <input name="pesquisa_url" placeholder="https://loja.pt/search?q={q}"></label>
+
+        <fieldset class="largo">
+          <legend>Envio para a Terceira</legend>
+          <div class="campos">
+            <label>Envia?
+              <select name="envia_terceira">
+                <option value="sim">Sim</option>
+                <option value="depende">Depende (artigo/vendedor)</option>
+                <option value="por_verificar">Por verificar</option>
+                <option value="nao">Não</option>
+              </select>
+            </label>
+            <label>Custo dos portes (€)<input name="custo_base" type="number" step="0.01" min="0"></label>
+            <label>Grátis a partir de (€)<input name="gratis_a_partir_de" type="number" step="0.01" min="0"></label>
+            <label>Transportadora<input name="transportadora" placeholder="CTT, DHL..."></label>
+            <label>Prazo (dias)<input name="prazo_dias" placeholder="3-5"></label>
+            <label>Avaliação
+              <select name="avaliacao">
+                <option value="">—</option>
+                <option value="boa">Boa</option>
+                <option value="media">Média</option>
+                <option value="evitar">A evitar</option>
+              </select>
+            </label>
+          </div>
+          <div class="escaloes">
+            <span>Escalões por peso <small>(opcional)</small></span>
+            <div id="escaloes"></div>
+            <button type="button" id="btn-escalao" class="link">+ adicionar escalão</button>
+          </div>
+        </fieldset>
+
+        <label class="largo">Devoluções<input name="devolucoes" placeholder="ex.: grátis via CTT / à custa do cliente"></label>
+        <label class="largo">Notas<textarea name="notas" rows="3"></textarea></label>
+        <label>Página das condições<input name="fonte_url" type="url"></label>
+        <label>Verificado em<input name="verificado_em" type="date"></label>
+        <label class="check"><input name="ativa" type="checkbox"> Incluir nas pesquisas</label>
+      </div>
+      <div class="acoes">
+        <button type="button" id="btn-apagar" class="perigo">Apagar</button>
+        <span class="espaco"></span>
+        <button type="button" id="btn-cancelar">Cancelar</button>
+        <button type="submit" class="primario">Guardar</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

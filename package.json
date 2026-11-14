@@ -1,0 +1,14 @@
+{
+  "name": "shopcompare",
+  "version": "0.1.0",
+  "description": "Comparador de preços + portes para compras online a partir da Terceira (Açores)",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "validar": "node scripts/validar.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

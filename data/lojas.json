@@ -1,0 +1,112 @@
+[
+  {
+    "id": "amazon-es",
+    "nome": "Amazon.es",
+    "url": "https://www.amazon.es",
+    "pais": "ES",
+    "categorias": [
+      "geral",
+      "eletrónica",
+      "informática",
+      "casa",
+      "desporto",
+      "livros"
+    ],
+    "pesquisa_url": "https://www.amazon.es/s?k={q}",
+    "envia_terceira": "depende",
+    "portes": {
+      "custo_base": null,
+      "gratis_a_partir_de": null,
+      "escaloes_peso": []
+    },
+    "transportadora": "",
+    "prazo_dias": "7-14 (estimativa)",
+    "devolucoes": "",
+    "avaliacao": null,
+    "notas": "POR VERIFICAR. Depende do vendedor: artigos 'vendidos e enviados pela Amazon' costumam enviar para os Açores; vários vendedores de marketplace não enviam para as ilhas. Confirmar no checkout com código postal da Terceira.",
+    "verificado_em": null,
+    "fonte_url": "",
+    "ativa": true
+  },
+  {
+    "id": "worten",
+    "nome": "Worten",
+    "url": "https://www.worten.pt",
+    "pais": "PT",
+    "categorias": [
+      "eletrónica",
+      "informática",
+      "eletrodomésticos",
+      "casa",
+      "gaming"
+    ],
+    "pesquisa_url": "https://www.worten.pt/search?query={q}",
+    "envia_terceira": "depende",
+    "portes": {
+      "custo_base": null,
+      "gratis_a_partir_de": null,
+      "escaloes_peso": []
+    },
+    "transportadora": "",
+    "prazo_dias": "",
+    "devolucoes": "",
+    "avaliacao": null,
+    "notas": "POR VERIFICAR. A página worten.pt/worten-entregas tem tabela de custos por região (inclui Açores). Há relatos de encomendas recusadas para Angra do Heroísmo e de vendedores do marketplace com zonas de entrega diferentes. Tem loja física na Terceira? Confirmar se há 'entrega em loja' grátis.",
+    "verificado_em": null,
+    "fonte_url": "https://www.worten.pt/worten-entregas",
+    "ativa": true
+  },
+  {
+    "id": "pcdiga",
+    "nome": "PCDiga",
+    "url": "https://www.pcdiga.com",
+    "pais": "PT",
+    "categorias": [
+      "informática",
+      "eletrónica",
+      "gaming"
+    ],
+    "pesquisa_url": "https://www.pcdiga.com/search?q={q}",
+    "envia_terceira": "por_verificar",
+    "portes": {
+      "custo_base": null,
+      "gratis_a_partir_de": null,
+      "escaloes_peso": []
+    },
+    "transportadora": "",
+    "prazo_dias": "",
+    "devolucoes": "",
+    "avaliacao": null,
+    "notas": "POR VERIFICAR. No continente, artigos sem entrega grátis pagam ~3,90 €; valor para os Açores desconhecido. URL de pesquisa por confirmar.",
+    "verificado_em": null,
+    "fonte_url": "",
+    "ativa": true
+  },
+  {
+    "id": "castro-electronica",
+    "nome": "Castro Electrónica",
+    "url": "https://www.castroelectronica.pt",
+    "pais": "PT",
+    "categorias": [
+      "eletrónica",
+      "informática",
+      "eletrodomésticos",
+      "imagem e som"
+    ],
+    "pesquisa_url": "https://www.castroelectronica.pt/pesquisa?s={q}",
+    "envia_terceira": "por_verificar",
+    "portes": {
+      "custo_base": null,
+      "gratis_a_partir_de": null,
+      "escaloes_peso": []
+    },
+    "transportadora": "",
+    "prazo_dias": "",
+    "devolucoes": "",
+    "avaliacao": null,
+    "notas": "POR VERIFICAR. Portes para os Açores desconhecidos. URL de pesquisa por confirmar.",
+    "verificado_em": null,
+    "fonte_url": "",
+    "ativa": true
+  }
+]
