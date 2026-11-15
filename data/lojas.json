@@ -15,7 +15,7 @@
     "pesquisa_url": "https://www.amazon.es/s?k={q}",
     "envia_terceira": "depende",
     "portes": {
-      "custo_base": null,
+      "custo_base": 0,
       "gratis_a_partir_de": null,
       "escaloes_peso": []
     },
@@ -23,9 +23,9 @@
     "prazo_dias": "7-14 (estimativa)",
     "devolucoes": "",
     "avaliacao": null,
-    "notas": "POR VERIFICAR. Depende do vendedor: artigos 'vendidos e enviados pela Amazon' costumam enviar para os Açores; vários vendedores de marketplace não enviam para as ilhas. Confirmar no checkout com código postal da Terceira.",
-    "verificado_em": null,
-    "fonte_url": "",
+    "notas": "Utilizador tem Prime: envio padrão grátis para os Açores em artigos vendidos/enviados pela Amazon. Vendedores do marketplace muitas vezes não enviam para as ilhas ou cobram ~28-30 €; nesses casos registar portes_observados. Confirmar no checkout.",
+    "verificado_em": "2026-11-15",
+    "fonte_url": "https://www.amazon.es/gp/help/customer/display.html?nodeId=G6LDPN7YJHYKH2J6",
     "ativa": true
   },
   {
@@ -43,16 +43,16 @@
     "pesquisa_url": "https://www.worten.pt/search?query={q}",
     "envia_terceira": "depende",
     "portes": {
-      "custo_base": null,
-      "gratis_a_partir_de": null,
+      "custo_base": 8.99,
+      "gratis_a_partir_de": 35,
       "escaloes_peso": []
     },
     "transportadora": "",
-    "prazo_dias": "",
+    "prazo_dias": "10-12 dias úteis",
     "devolucoes": "",
     "avaliacao": null,
-    "notas": "POR VERIFICAR. A página worten.pt/worten-entregas tem tabela de custos por região (inclui Açores). Há relatos de encomendas recusadas para Angra do Heroísmo e de vendedores do marketplace com zonas de entrega diferentes. Tem loja física na Terceira? Confirmar se há 'entrega em loja' grátis.",
-    "verificado_em": null,
+    "notas": "Grátis para a Terceira acima de 35 € (confirmado pelo utilizador). Abaixo disso: artigos pequenos 8,99 €, médios (aspirador, micro-ondas) 17,99 €. Grandes eletrodomésticos NÃO são entregues nos Açores. Vendedores do marketplace têm zonas e portes próprios. Há relatos de encomendas recusadas para Angra.",
+    "verificado_em": "2026-11-15",
     "fonte_url": "https://www.worten.pt/worten-entregas",
     "ativa": true
   },
@@ -67,19 +67,19 @@
       "gaming"
     ],
     "pesquisa_url": "https://www.pcdiga.com/search?q={q}",
-    "envia_terceira": "por_verificar",
+    "envia_terceira": "sim",
     "portes": {
       "custo_base": null,
       "gratis_a_partir_de": null,
       "escaloes_peso": []
     },
-    "transportadora": "",
+    "transportadora": "CTT ou parceiros",
     "prazo_dias": "",
     "devolucoes": "",
     "avaliacao": null,
-    "notas": "POR VERIFICAR. No continente, artigos sem entrega grátis pagam ~3,90 €; valor para os Açores desconhecido. URL de pesquisa por confirmar.",
-    "verificado_em": null,
-    "fonte_url": "",
+    "notas": "Entrega nas ilhas (Madeira e Açores) segundo a página de envios. Custo para os Açores ainda desconhecido: confirmar no checkout com código postal 9700. No continente, artigos sem entrega grátis pagam ~3,90 €. URL de pesquisa por confirmar.",
+    "verificado_em": "2026-11-15",
+    "fonte_url": "https://www.pcdiga.com/envio-de-grandes-eletrodomesticos",
     "ativa": true
   },
   {
@@ -93,20 +93,45 @@
       "eletrodomésticos",
       "imagem e som"
     ],
-    "pesquisa_url": "https://www.castroelectronica.pt/pesquisa?s={q}",
-    "envia_terceira": "por_verificar",
+    "pesquisa_url": "",
+    "envia_terceira": "sim",
     "portes": {
-      "custo_base": null,
+      "custo_base": 12.5,
       "gratis_a_partir_de": null,
-      "escaloes_peso": []
+      "escaloes_peso": [
+        {
+          "ate_kg": 2,
+          "custo": 12.5
+        },
+        {
+          "ate_kg": 9.99,
+          "custo": 30
+        },
+        {
+          "ate_kg": 19.99,
+          "custo": 35
+        },
+        {
+          "ate_kg": 29.99,
+          "custo": 45
+        },
+        {
+          "ate_kg": 49.99,
+          "custo": 50
+        },
+        {
+          "ate_kg": 99.99,
+          "custo": 60
+        }
+      ]
     },
-    "transportadora": "",
-    "prazo_dias": "",
+    "transportadora": "Abreucarga (ilhas) / Correio Registado",
+    "prazo_dias": "3-10 dias úteis",
     "devolucoes": "",
     "avaliacao": null,
-    "notas": "POR VERIFICAR. Portes para os Açores desconhecidos. URL de pesquisa por confirmar.",
-    "verificado_em": null,
-    "fonte_url": "",
+    "notas": "Correio Registado 12,50 € só até 2 kg (soma dos lados ≤ 90 cm, lado maior ≤ 60 cm); acima disso carga marítima por escalões. Baterias/sprays podem ter de ir por barco. Pré-pagamento. A página \"Entrega Grátis\" não menciona as ilhas. Pesquisa do site só funciona com JavaScript (Doofinder): usar WebSearch \"site:castroelectronica.pt <produto>\".",
+    "verificado_em": "2026-11-15",
+    "fonte_url": "https://www.castroelectronica.pt/pt/ajuda/custos-de-envio",
     "ativa": true
   }
 ]
